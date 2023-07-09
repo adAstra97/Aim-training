@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Khula&display=swap');
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   color: #fff;
+   font-family: 'Khula', sans-serif;
+   height: 100vh;
+   overflow: hidden;
+   text-align: center;
+}
+
+h1 {
+   line-height: 1.4;
+   font-size: 4rem;
+   padding: 0 10px;
+}
+
+h3 {
+   line-height: 1.2;
+   font-size: 2rem;
+   text-shadow: 0 0 4px #ffffff;
+}
+
+.start-btn {
+   color: #fff;
+   font-family: inherit;
+   font-size: 1.5rem;
+   text-decoration: none;
+   border: 2px solid #fff;
+   padding: 10px 15px;
+   border-radius: 20px;
+   transition: 0.2s;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+.start-btn:hover, .time-btn:hover, .repeat-btn:hover {
+   color: #f1e48c;
+   border: 2px solid #f1e48c;
+   box-shadow: 0 0 10px #f1e48c;
+}
+
+.screen {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   width: 100vw;
+   transition: margin 0.5s ease-out;
+   background: radial-gradient(circle, rgba(81,28,117,1) 0%, rgba(16,8,29,1) 100%);
+   gap: 20px;
+}
+
+.screen.up {
+   margin-top: -100vh;
+}
+
+.time-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   list-style: none;
+   padding: 0;
+}
+
+.time-list li {
+   margin: 10px;
+}
+
+.time-btn,
+.repeat-btn {
+   background-color: transparent;
+   border: 2px solid #c0c0c0;
+   color: #fff;
+   cursor: pointer;
+   font-family: inherit;
+   padding: 0.5rem 1rem;
+   font-size: 1.5rem;
+   border-radius: 10px;
+   transition: 0.2s;
+}
+
+.board {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   max-width: 500px;
+   width: 90%;
+   height: 90%;
+   max-height: 500px;
+   background-color: rgb(36, 35, 37);
+   box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+   border-radius: 10px;
+   overflow: hidden;
+}
+
+.hide {
+   opacity: 0;
+}
+
+.finish {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+}
+
+.primary {
+   color: #f1e48c;
+}
+
+.circle {
+   position: absolute;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.first-screen {
+   margin: 100vh;
+}
